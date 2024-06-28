@@ -1,3 +1,4 @@
+package Model.Humans;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -6,7 +7,7 @@ import java.util.*;
 
 
 
-public class Human implements TreeTop{
+public class Human implements TreeTop {
     private long innerID;
     private String  name;
     private Human mother, father;

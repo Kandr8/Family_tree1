@@ -1,26 +1,14 @@
 
-//import java.io.IOException;
-//import Family_tree.Model.Humans.*;
-//import Family_tree.View.*;
-//
-//public class Main {
-//
-//
-//    public static void main(String[] args) throws IOException {
-//
-//
-//
-//        View<Human> view = new HumanView();
-//        view.start();
-//
-//
-//    }
-//}
+import Model.Humans.Gender;
+import Model.Humans.Human;
+import Model.Tree.Family_tree1;
+
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        FamilyTree1 newTree = new FamilyTree1<>();
+       ;
+        Family_tree1 newTree = new Family_tree1();
 
         Human vasiliy = new Human("Василий", Gender.Male,
                 LocalDate.of(1955, 8, 5), null,null,null);

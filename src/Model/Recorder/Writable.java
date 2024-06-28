@@ -1,3 +1,5 @@
+package Model.Recorder;
+
 import java.io.*;
 
 public interface Writable {

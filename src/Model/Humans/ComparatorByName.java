@@ -1,3 +1,5 @@
+package Model.Humans;
+
 import java.util.Comparator;
 
 public class ComparatorByName<T extends TreeTop> implements Comparator<T>{

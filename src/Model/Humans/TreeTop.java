@@ -1,3 +1,6 @@
+package Model.Humans;
+
+
 import java.io.Serializable;
 import java.time.LocalDate;
 public interface TreeTop extends Serializable,Comparable<TreeTop> {
