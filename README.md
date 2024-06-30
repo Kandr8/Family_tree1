@@ -32,11 +32,11 @@ Presenter - центральный узел обмена информацией 
 
 5. Принцип инверсии зависимостей
 
-На мой взгляд, это Recorder
+Принцип соблюдается (возможно) в Recorder.
 
 ## Недостатки ##
 
-- Времени не хватило на правильную реализацию Presenter (пункт 1 в SOLID). 
+- Времени не хватило на правильную реализацию Presenter . 
 - В main нужно (
 public class Main {
     public static void main(String[] args) {
@@ -44,21 +44,11 @@ public class Main {
         view.start();) , но пока не клеиться).
 
  - Нехватает методов: загрузки, сохранения.
- - Presenter выполняет не свою функцию (public class Presenter {
-    private View view;
-    private Family_tree tree;
-    public Presenter(View view) {
-        this.view = view;
-        tree = new Family_tree();
-    }
-
-
-    public void add(String name, String gender, String birthDate) {
-        tree.add(new Human(name, gender, birthDate));)  - возможно это функция сервиса.
+ 
  - Много недоработок и неверной (не оптимальной) реализации.
      
 
    ### P.S.
-    К сожелению сказывается нехватка времени  ( нахожусь в длительной командировке), практики и знаний) . Почему-то у меня нет лекций по ООП.
+    К сожелению сказывается нехватка времени  ( нахожусь в длительной командировке) и  практики. Знания не структурированы  . Почему-то у меня нет лекций по ООП.
    
           
