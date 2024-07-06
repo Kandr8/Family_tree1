@@ -5,6 +5,7 @@ import Family_tree1.Model.HumanService;
 import Family_tree1.Model.Humans.Gender;
 import Family_tree1.Model.Humans.Human;
 import Family_tree1.Model.Tree.Family_tree1;
+import Family_tree1.View.ActionLevel;
 import Family_tree1.View.HumanView;
 
 import java.nio.file.Files;
@@ -179,6 +180,18 @@ public class HumanPresenter extends Presenter {
 
     public String selectSubject(int index) {
         String s = null;
+        return null;
+    }
+
+    public void setActionLevel(ActionLevel level) {
+    }
+
+    public ActionLevel getActionLevel() {
+
+        return null;
+    }
+
+    public String setActiveTree(int index) {
         return null;
     }
 }

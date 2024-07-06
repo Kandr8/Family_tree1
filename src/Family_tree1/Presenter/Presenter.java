@@ -39,6 +39,5 @@ public abstract class Presenter {
     public abstract String getTreeList();
 
 
-
-
+    public abstract String addToTree(String name, String s, String s1);
 }
