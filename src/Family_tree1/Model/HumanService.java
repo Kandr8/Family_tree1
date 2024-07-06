@@ -1,9 +1,8 @@
-package Model;
+package Family_tree1.Model;
 
-import Model.Humans.Gender;
-import Model.Humans.Human;
-import Model.Recorder.Service;
-import Model.Tree.Family_tree1;
+import Family_tree1.Model.Humans.Gender;
+import Family_tree1.Model.Humans.Human;
+import Family_tree1.Model.Tree.Family_tree1;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

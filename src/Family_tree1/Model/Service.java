@@ -1,8 +1,9 @@
-package Model.Recorder;
+package Family_tree1.Model;
 
-import Model.Humans.Gender;
-import Model.Humans.TreeTop;
-import Model.Tree.Family_tree1;
+import Family_tree1.Model.Humans.Gender;
+import Family_tree1.Model.Humans.TreeTop;
+import Family_tree1.Model.Recorder.Recorder;
+import Family_tree1.Model.Tree.Family_tree1;
 
 import java.time.LocalDate;
 import java.util.HashMap;

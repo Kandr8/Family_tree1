@@ -1,10 +1,10 @@
-package Model.Tree;
+package Family_tree1.Model.Tree;
 
-import Model.Humans.ComparatorByAge;
-import Model.Humans.ComparatorByID;
-import Model.Humans.ComparatorByName;
-import Model.Humans.TreeTop;
-import Model.Recorder.Recorder;
+import Family_tree1.Model.Humans.ComparatorByAge;
+import Family_tree1.Model.Humans.ComparatorByID;
+import Family_tree1.Model.Humans.ComparatorByName;
+import Family_tree1.Model.Humans.TreeTop;
+import Family_tree1.Model.Recorder.Recorder;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -126,7 +126,7 @@ public class Family_tree1<T extends TreeTop> implements  Iterable<T>, Serializab
     }
 
 
-
-
-
+    public long getInnerID() {
+        return 0;
+    }
 }

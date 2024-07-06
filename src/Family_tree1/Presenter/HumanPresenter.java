@@ -1,18 +1,18 @@
-package Presenter;
+package Family_tree1.Presenter;
 
 
-import Model.HumanService;
-import Model.Humans.Gender;
-import Model.Humans.Human;
-import Model.Tree.Family_tree1;
-import Viev.HumanView;
+import Family_tree1.Model.HumanService;
+import Family_tree1.Model.Humans.Gender;
+import Family_tree1.Model.Humans.Human;
+import Family_tree1.Model.Tree.Family_tree1;
+import Family_tree1.View.HumanView;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 
-public class HumanPresenter extends Presenter<Human> {
+public class HumanPresenter extends Presenter {
     private HumanService service;
     private Family_tree1<Human> activeTree;
 
@@ -76,7 +76,7 @@ public class HumanPresenter extends Presenter<Human> {
             try {
                 tree = service.loadTree(path);
                 this.activeTree = tree;
-                return String.format("Древо %s загружено", tree.toString());
+                return String.format("Дерево  загружено", tree.toString());
             } catch (Exception e) {
                 System.out.println(e);
                 return "Ошибка чтения";
@@ -87,12 +87,52 @@ public class HumanPresenter extends Presenter<Human> {
     }
 
     @Override
+    public String showActiveSubjectInfo() {
+        return null;
+    }
+
+    @Override
+    public String removeMember() {
+        return null;
+    }
+
+    @Override
+    public String removeTree() {
+        return null;
+    }
+
+    @Override
+    public String showSubjectList() {
+        return null;
+    }
+
+    @Override
+    public String getTreeList() {
+        return null;
+    }
+
+    @Override
     public String saveTree(String path) {
         if (service.saveTree(path)) {
             return "Сохранено";
         } else {
             return "Ошибка сохранения";
         }
+    }
+
+    @Override
+    public String addToTree(String name, Gender gender, LocalDate birhday) {
+        return null;
+    }
+
+    @Override
+    public String newChild(String name, String gender, String birhday, int IDFather, int IDMother) {
+        return null;
+    }
+
+    @Override
+    public String searchByPattern(String text) {
+        return null;
     }
 
     //_________________________________________________________________________Спихнуть в сервис
@@ -120,11 +160,25 @@ public class HumanPresenter extends Presenter<Human> {
         return String.format("Выбрано древо %d", index);
     }
 
+    @Override
+    public String setDeathDate(String text) {
+        return null;
+    }
+
     public Human newHuman(String nane, Gender gender, LocalDate birthDate) {
         return service.newHuman(nane, gender, birthDate);
     }
 
     public boolean newChild(String nane, Gender gender, LocalDate birthDate, int idfather, int idmother) {
         return service.newChild(nane, gender, birthDate, idfather, idmother);
+    }
+
+    public String delMarriage(int id1, int id2) {
+        return null;
+    }
+
+    public String selectSubject(int index) {
+        String s = null;
+        return null;
     }
 }
