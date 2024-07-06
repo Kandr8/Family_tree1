@@ -113,6 +113,11 @@ public class HumanPresenter extends Presenter {
     }
 
     @Override
+    public String addToTree(String name, String s, String s1) {
+        return null;
+    }
+
+    @Override
     public String saveTree(String path) {
         if (service.saveTree(path)) {
             return "Сохранено";
